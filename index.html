@@ -8,7 +8,9 @@
 <body>
     <section id="inicio" class="pagina">
         <header>
-            <div class="logo">Fundación Niños Felices</div>
+            <div class="logo">
+                <img src="images/logofundacion.jpg" alt="Logo de la Fundacion">
+            </div>
             <nav>
                 <ul>
                     <li><a href="#nosotros">Nosotros</a></li>
@@ -61,27 +63,40 @@
                 <p>Descripción del proyecto 2 ...</p>
     </section>
     <section id="contacto" class="pagina">
-        <div class="donantes"></div>
-            <h2>Donantes</h2>
-            <div class="lista-donantes">
-                <!-- Lista desplazable de donantes-->
-            </div>
+        <h2>Donantes</h2>
+        <div class="donantes">
+            <div class="donante">Donante 1</div>
+            <div class="donante">Donante 2</div>
+            <div class="donante">Donante 3</div>
+            <div class="donante">Donante 4</div>
+            <div class="donante">Donante 5</div>
+            <div class="donante">Donante 2</div>
+            <div class="donante">Donante 3</div>
+            <div class="donante">Donante 4</div>
+        </div>
         <div class="info-contacto">
-            <h2>Formulario de Contacto</h2>
+            <h2>Formulario de Contacto</h2>   
+        </div>
+        <div class="form-contacto">
             <form action="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>            
-                <input type="text" id="mensaje" name="mensaje" required>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
 
                 <button type="submit">Enviar</button>
             </form>
         </div>
-        <div class="form-contacto"></div>
     </section>
 
     <script src="script.js"></script>
